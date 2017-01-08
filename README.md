@@ -5,8 +5,8 @@
 
 ### Usage
 
-- git clone git@github.com:hakankaradis/react-redux-router-webpack-coffee-boilerplate.git <your-project-name>
-- cd <your-project-name>
+- git clone git@github.com:hakankaradis/react-redux-router-webpack-coffee-boilerplate.git `<your-project-name>`
+- cd `<your-project-name>`
 - npm install
 - npm start
 
