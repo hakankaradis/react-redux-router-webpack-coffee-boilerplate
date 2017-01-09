@@ -5,10 +5,12 @@
 
 ### Usage
 
-- git clone git@github.com:hakankaradis/react-redux-router-webpack-coffee-boilerplate.git `<your-project-name>`
-- cd `<your-project-name>`
-- npm install
-- npm start
+```
+git clone git@github.com:hakankaradis/react-redux-router-webpack-coffee-boilerplate.git /project/path
+cd /project/path
+npm install
+npm start
+```
 
 ### Notes
 
@@ -18,5 +20,5 @@
 - containers where you connect the store, actions and views
 - components accepts only props and render view
 
-### Screencast
+### Demo
 ![](http://g.recordit.co/pFmxBeDh1v.gif)
