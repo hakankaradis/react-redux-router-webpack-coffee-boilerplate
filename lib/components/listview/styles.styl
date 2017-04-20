@@ -1,0 +1,64 @@
+@import '~components/colors/color.styl'
+
+.listview
+  margin                    40px auto 0px
+  text-align                center
+  width                     400px
+  max-height                350px
+  overflow                  hidden
+  overflow-y                visible
+
+.listview::-webkit-scrollbar
+  -webkit-appearance        none
+
+.listview::-webkit-scrollbar:vertical
+  width                     7px
+
+.listview::-webkit-scrollbar-thumb
+  height                    120px
+  border-radius             8px
+  border                    2px solid transparent
+  background-color          rgba(0,0,0,0.25)
+
+.listviewloading
+  margin                    40px auto 0px
+  text-align                center
+
+
+.listviewitem
+  display                   flex
+  height                    51px
+  align-items               center
+  border-top                1px solid $list-border-color
+
+.listviewcontent
+  display                   flex
+  flex                      1 0 auto
+  align-items               center
+  height                    30px
+  img
+    height                  24px
+    width                   24px
+    margin-right            8px
+
+.contentwrapper
+  display                   flex
+  align-items               center
+
+.listviewaction
+  padding                   5px
+
+.mainText
+  max-height                300px
+  font-size                 13px
+  color                     $header-color
+  font-weight               600
+  line-height               20px
+
+.secText
+  color                     $text-color-sec
+  font-size                 12px
+  &:before
+    content                 '|'
+    margin                  0 8px
+
