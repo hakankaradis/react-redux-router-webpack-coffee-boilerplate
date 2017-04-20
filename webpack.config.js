@@ -54,6 +54,10 @@ var webpackConfig = {
         limit: 8192,
         name: '[path][name].[ext]'
       }
+    },
+    {
+      test: /\.(png|jpg|gif|woff|otf)/,
+      loader: 'file'
     }, {
       test: /\.ttf$/,
       loader: 'file',

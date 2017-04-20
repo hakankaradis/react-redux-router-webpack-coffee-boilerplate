@@ -1,24 +1,28 @@
-# React Redux Router Coffee Boiler Plate
+# Brave QA Website
+  brave.qa is website where organization owners come and automate their tests with real people.
 
-- Simple boilerplate to use react, redux, react-router with coffeescript. 
-- Configurable with webpack
+### Steps
+  - Select an organization
+  - Select a repository
+  - Integrate with Koding.com
+  - Customize test environment stack
+  - Add Webhook to repository to catch push commits
+  - Create Test Stack
 
-### Usage
+# Brave QA Chrome Extension
 
-```
-git clone git@github.com:hakankaradis/react-redux-router-webpack-coffee-boilerplate.git /project/path
-cd /project/path
-npm install
-npm start
-```
+  ![](https://chrome.google.com/webstore/detail/qa-chrome-extension/aenfjbniniahgbocllaopbkhiflfkane/related?utm_source=gmail)
+  Every push to setup repository creates a new test for repository.
+  This extension provides easy test interface to test every test suites step by step.
 
-### Notes
 
-- Add your actions to lib/actions folder
-- Add your reducers to lib/reducers folder and don't forget to require it in index.coffee file
-- Add your project routes to routes.coffee with its component and path and also its child components 
-- containers where you connect the store, actions and views
-- components accepts only props and render view
+# Brave QA Server
 
-### Demo
-![](http://g.recordit.co/pFmxBeDh1v.gif)
+  Firebase cloud functions.
+
+### Project Folders
+
+  + braveqa: the requests from brave.qa
+  + tester: the requests from chrome-extension
+  + payload.js: triggered via github webhook
+
