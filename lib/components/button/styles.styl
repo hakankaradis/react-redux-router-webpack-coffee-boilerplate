@@ -1,0 +1,52 @@
+@import '~components/colors/color.styl'
+
+
+.button
+  max-width                 300px
+  height                    40px
+  margin                    auto
+  text-align                center
+  cursor                    pointer
+  border                    1px solid transparent
+  position                  relative
+  .text
+    letter-spacing          0.17px
+    font-weight             500
+    white-space             nowrap
+    font-size               16px
+    color                   #FFF
+    position                absolute
+    top                     50%
+    left                    50%
+    transform               translate(-50%, -50%)
+
+.blue
+  background-color          $blue
+
+.green
+  background-color          $green
+
+.pink
+  background-color          $pink
+
+
+.white
+  border-color              $small-sec-button-border-color
+  background-color          #FFF
+  .text
+    color                   $small-sec-button-text-color
+
+.small
+  width                     100px
+  height                    30px
+  border-color              $small-sec-button-border-color
+  .text
+    font-size               14px
+    color                   $small-sec-button-text-color
+
+.small.primary
+  border-color              $blue
+  .text
+    color                   $blue
+
+
