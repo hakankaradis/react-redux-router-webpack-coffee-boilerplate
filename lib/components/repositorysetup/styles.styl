@@ -1,0 +1,153 @@
+@import '~components/colors/color.styl'
+
+.createstacktemplate
+  margin                    0 auto
+  text-align                center
+  input
+    margin                  10px 0px
+
+
+.form
+  width                     350px
+  margin                    10px auto 0
+  text-align                center
+  input
+    margin                  10px 0px
+
+.alldone
+  text-align                center
+  .stackready
+    margin-top              10px
+    color                   $text-color-sec
+  .webhookready
+    margin-top              10px
+    color                   $text-color-sec
+  .gotoreposbutton
+    margin                  40px auto
+
+
+.loginsuccessmodal
+  text-align                center
+  .stackurl
+    margin                  20px 0
+    color                   $text-color
+    a
+      color                 $blue
+      text-decoration       none
+    .button
+      margin                20px auto
+
+  .notinitializedstack
+    color                   $text-color
+    font-weight             600
+
+
+.signinsuccess
+  .button
+    margin                  20px auto
+
+
+.kodinglinks
+  text-align                center
+  color                     $blue
+  margin-top                30px
+  font-size                 13px
+  div
+    margin-top              10px
+
+.reposetuppage
+  height                    calc(100vh - 140px)
+  background                $repository-setup-bg-color
+
+.reposetuptext
+  text-align                center
+  padding                   40px 0
+  color                     $header-color
+  font-size                 20px
+
+// repositoryheader starts here
+.repositoryheader
+  height                    80px
+  display                   flex
+  align-items               center
+
+  .reponame
+    color                   $header-color
+    font-size               20px
+    font-weight             600
+    line-height             54px
+    margin-left             20px
+
+  .publish
+    display                 flex
+    margin-left             40px
+    align-items             center
+    .switchinfo
+      margin-left           20px
+      display               flex
+      align-items           center
+      color                 $text-color-sec
+      font-size             13px
+
+    .switch
+      position              relative
+      display               inline-block
+      width                 60px
+      height                34px
+
+    .notready
+      opacity             .5
+      pointer-events      none
+
+    .switch input
+      display               none
+    .slider
+      position              absolute
+      cursor                pointer
+      top                   0
+      left                  0
+      right                 0
+      bottom                0
+      background-color      #ccc
+      -webkit-transition    .1s
+      transition            .1s
+
+
+    .slider:before
+      position              absolute
+      content               ""
+      height                26px
+      width                 26px
+      left                  4px
+      bottom                4px
+      background-color      #FFF
+      -webkit-transition    .1s
+      transition            1s
+
+
+    input:checked + .slider
+      background-color      #2196F3
+
+
+    input:focus + .slider
+      box-shadow            0 0 1px #2196F3
+
+
+    input:checked + .slider:before
+      -webkit-transform     translateX(26px)
+      -ms-transform         translateX(26px)
+      transform             translateX(26px)
+
+    .repostat
+      div
+        margin-bottom       5px
+      .success
+        color               $green
+        label:before
+          content           '\2713'
+          margin-right      5px
+      .fail
+        color               $pink
+        label:before
+          margin-right      10px
+          content           '\2718'
