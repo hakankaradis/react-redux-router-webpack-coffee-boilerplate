@@ -1,8 +1,23 @@
 React = require 'react'
-styles = require './styles.styl'
+{ connect } = require 'react-redux'
+{ browserHistory } = require 'react-router'
 
-module.exports = class App extends React.Component
+Actions = require 'redux/actions'
+App = require 'components/app'
 
-  render: ->
+mapStateToProps = (state) ->
 
-    <div className={styles.container}> {@props.children} </div>
+  orgUser: state.orgUser
+  authenticatedUser: state.authenticatedUser
+
+mapDispatchToProps = (dispatch) ->
+
+  signOut: -> dispatch Actions.userSignedOut()
+  back: -> browserHistory.goBack()
+  push: (path) -> browserHistory.push path
+
+
+module.exports = connect(
+  mapStateToProps
+  mapDispatchToProps
+)(App)
